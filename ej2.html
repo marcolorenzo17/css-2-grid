@@ -7,13 +7,10 @@
     <title>GRID - EJ2</title>
     <style>
       .contenedor {
-        /* USA LAS SIGUIENTES PROPIEDADES */
-        /*
-        display: ;
-        grid-template-rows: ;
-        grid-template-columns: ;
-        grid-gap: ;
-        */
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 8px;
       }
 
       .caja {
@@ -24,14 +21,41 @@
       }
 
       .caja:nth-child(1){
-        /* USA LAS SIGUIENTES PROPIEDADES */
-        /*
-          grid-column-start: ;
-          grid-column-end: ;
-        */        
+          grid-column-start: span 12;
+          grid-column-end: span 12;
       }
 
-      /* Define del mismo el resto de DIVS. */
+      .caja:nth-child(2),
+      .caja:nth-child(3) {
+          grid-column-start: span 6;
+          grid-column-end: span 6;
+      }
+
+      .caja:nth-child(4),
+      .caja:nth-child(5),
+      .caja:nth-child(6) {
+          grid-column-start: span 4;
+          grid-column-end: span 4;
+      }
+
+      .caja:nth-child(7),
+      .caja:nth-child(8),
+      .caja:nth-child(9),
+      .caja:nth-child(10) {
+          grid-column-start: span 3;
+          grid-column-end: span 3;
+      }
+
+      .caja:nth-child(11),
+      .caja:nth-child(12),
+      .caja:nth-child(13),
+      .caja:nth-child(14),
+      .caja:nth-child(15),
+      .caja:nth-child(16) {
+          grid-column-start: span 2;
+          grid-column-end: span 2;
+      }
+
     </style>
   </head>
   <body>

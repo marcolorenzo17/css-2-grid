@@ -7,48 +7,30 @@
   <title>GRID - EJ4</title>
   <style>
     header {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: he;
       height: 75px
     }
 
     nav {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: na;
     }
 
     aside.menu {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */       
+      grid-area: am;
       height: 200px;
     }
 
     article {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: ar;
     }
 
-    aside.publi {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+    aside.publ {
+      grid-area: ap;
       height: 50px;
     }
 
     footer {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: fo;
     }
 
     .contenedor > * {
@@ -59,11 +41,13 @@
     }
 
     .contenedor{
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      display: ;
-      grid-gap: ;
-      grid-template-areas:      */ 
+      display: grid;
+      grid-gap: 15px;
+      grid-template-areas:
+        "he he he he"
+        "na na na na"
+        "am ar ar ar"
+        "ap fo fo fo"
     }
   </style>
 </head>
@@ -73,8 +57,8 @@
     <nav>NAV</nav>
     <aside class="menu">SIDEBAR</aside>
     <article>ARTÍCULO</article>
-    <aside class="publi">PUBLICDIDAD</aside>
+    <aside class="publ">PUBLICDIDAD</aside>
     <footer>FOOTER</footer>
-  </div>  
+  </div>
 </body>
 </html>
